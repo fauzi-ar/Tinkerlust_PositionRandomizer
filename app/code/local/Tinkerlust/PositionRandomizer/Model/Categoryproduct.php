@@ -1,5 +1,6 @@
 <?php 
-class Tinkerlust_PositionRandomizer_Model_Categoryproduct extends Mage_Core_Model_Abstract {
+class Tinkerlust_PositionRandomizer_Model_Categoryproduct extends Mage_Core_Model_Abstract
+{
     protected function _construct()
     {
         $this->_init('positionrandomizer/categoryproduct');

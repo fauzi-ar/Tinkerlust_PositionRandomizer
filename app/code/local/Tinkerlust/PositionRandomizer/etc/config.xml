@@ -29,8 +29,12 @@
 	<crontab>
         <jobs>
             <positionrandomizer_cron>
-                <schedule><cron_expr>0 15 * * *</cron_expr></schedule>
-                <run><model>positionrandomizer/observer::randomize</model></run>
+                <schedule>
+                	<cron_expr>0 15 * * *</cron_expr>
+               	</schedule>
+                <run>
+                	<model>positionrandomizer/observer::randomize</model>
+                </run>
             </positionrandomizer_cron>
         </jobs>
     </crontab>
