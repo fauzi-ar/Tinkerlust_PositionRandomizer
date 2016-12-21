@@ -26,11 +26,22 @@
 			</positionrandomizer_resource>
 		</models>
 	</global>    	
+	<frontend>
+		<routers>
+			<PositionRandomizer>
+				<use>standard</use>
+				<args>
+					<module>Tinkerlust_PositionRandomizer</module>
+					<frontName>positionrandomizer</frontName>
+				</args>
+			</PositionRandomizer>
+		</routers>
+	</frontend>
 	<crontab>
         <jobs>
             <positionrandomizer_cron>
                 <schedule>
-                	<cron_expr>0 15 * * *</cron_expr>
+                	<cron_expr>0 6 * * *</cron_expr>
                	</schedule>
                 <run>
                 	<model>positionrandomizer/observer::randomize</model>
